@@ -1,0 +1,44 @@
+{
+  "name": "protobuff-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next -p 7777",
+    "build": "next build",
+    "start": "next start",
+    "test": "NODE_ENV=test jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpicone/protobuff.git"
+  },
+  "author": "vpp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vpicone/protobuff/issues"
+  },
+  "homepage": "https://github.com/vpicone/protobuff#readme",
+  "dependencies": {
+    "@zeit/next-typescript": "^1.1.1",
+    "apollo-boost": "^0.1.16",
+    "apollo-client": "^2.4.2",
+    "babel-core": "^6.26.3",
+    "babel-plugin-styled-components": "^1.8.0",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "next": "^7.0.2",
+    "next-with-apollo": "^3.2.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.5.2",
+    "styled-components": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/next": "^7.0.3",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/styled-components": "^4.0.1"
+  }
+}

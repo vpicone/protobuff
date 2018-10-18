@@ -1,0 +1,12 @@
+# import * from './generated/prisma.graphql'
+type SuccessMessage {
+  message: String
+}
+
+type Mutation {
+  createProject(name: String, description: String, assets: [ID!]): Project!
+}
+
+type Query {
+  projects: [Project]!
+}

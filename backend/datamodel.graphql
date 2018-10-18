@@ -1,0 +1,45 @@
+enum Permission {
+  ADMIN
+  USER
+  PROJECTCREATE
+  PROJECTDELETE
+  PERMISSIONUPDATE
+}
+
+type User {
+  id: ID! @unique
+  name: String!
+  email: String! @unique
+  password: String!
+  resetToken: String
+  resetTokenExpiry: String
+  permissions: [Permission]!
+}
+
+type Project {
+  id: ID! @unique
+  name: String!
+  description: String
+  # user: User!
+  assets: [Asset!]!
+}
+
+type Asset {
+  id: ID! @unique
+  user: User!
+  image: String
+  largeImage: String
+  href: String
+  tags: [String!]
+  description: String!
+  name: String!
+}
+
+type Vote {
+  id: ID! @unique
+  user: User!
+  score: Int!
+  asset: Asset!
+  project: Project!
+  comment: String
+}
